@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainPaneController">
+   <children>
+      <Button layoutX="168.0" layoutY="353.0" mnemonicParsing="false" onAction="#showTop3" text="Show top 3">
+         <tooltip>
+            <Tooltip text="Lists three EU countries with highest standard VAT rate" />
+         </tooltip>
+      </Button>
+      <Button layoutX="353.0" layoutY="353.0" mnemonicParsing="false" onAction="#showBottom3" text="Show last 3">
+         <tooltip>
+            <Tooltip text="Lists three EU countries with lowest standard VAT rate" />
+         </tooltip>
+      </Button>
+      <ListView fx:id="resultList" layoutX="37.0" layoutY="27.0" prefHeight="306.0" prefWidth="525.0"  />
+      <Button layoutX="266.0" layoutY="353.0" mnemonicParsing="false" text="Show ALL" onAction="#showAll"/>
+   </children>
+</AnchorPane>
