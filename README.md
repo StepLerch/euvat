@@ -9,3 +9,6 @@ There is several ways to generate executable jar by maven, I decided for spring 
 
 Log:
 App should generate log file EUVAT-log.log (only errors now).
+
+Main:
+Main method is placed in Demo.java
